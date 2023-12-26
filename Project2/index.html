@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+
+  <title>Odyssey travel</title>
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="images/fevicon.png" type="image/gif" />
+  <link href="https://cdn.jsdelivr.net/jquery.mcustomscrollbar/3.1.3/jquery.mCustomScrollbar.min.css" rel="stylesheet"
+    type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<!-- body -->
+
+<body class="main-layout">
+  <!-- loader  -->
+  <div class="loader_bg">
+    <div class="loader"><img src="images/loading.gif" alt="#" /></div>
+  </div>
+
+  <!-- header -->
+  <header>
+    <!-- header inner -->
+    <div class="header">
+      <div class="header_white_section">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="header_information">
+                <ul>
+                  <li>
+                    <img src="images/1.png" alt="#" /> Tbilisi, Lubliana
+                  </li>
+                  <li>
+                    <img src="images/2.png" alt="#" /> +995 555 11 11 11
+                  </li>
+                  <li><img src="images/3.png" alt="#" /> vigaca@gmail.com</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+            <div class="full">
+              <div class="" style >
+                <div class="logo">
+                  <a href="index.html"><img src="images/logo.png" style="height: 70px" alt="#" /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+            <div class="menu-area">
+              <div class="limit-box">
+                <nav class="main-menu">
+                  <ul class="menu-area-main">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#travel">Travel</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href="javascript:void(0);" id="readMoreBtn">Register</a></li>
+                    <li><a href="javascript:void(0);" id="readMoreBtn2">Login</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section>
+    <div class="banner-main">
+      <img src="images/banner.jpg" alt="#" />
+      <div class="container">
+        <div class="text-bg">
+          <h2>
+            Georgian Odyssey<br /><strong class="white">A Journey Through Time and Taste</strong>
+          </h2>
+          <div class="button_section" id="">
+            <a class="main_bt readMoreBtn3" href="#" >Find Your Tour</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Modal container -->
+  <!-- Modal container -->
+  <div id="readMoreBtn2">
+    <div class="modal" id="myModal">
+      <div class="modal-content" style="position: absolute;
+    top: 338px !important;
+    height: 76vh;
+    overflow-y: auto;">
+        <!-- Your existing container content goes here -->
+        <div class="container">
+          <form class="main-form">
+            <div class="row">
+              <div class="col-md-12">
+                <form class="text-center">
+                  <div class="row" id="Registration-form">
+                    <div class="col-md-12">
+                      <h2 class="form-heading">Registration Form</h2>
+                      <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control rounded border border-1" id="name"
+                          placeholder="Enter Name">
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control rounded border border-1" id="register_email"
+                          placeholder="Enter Email">
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control rounded border border-1" id="register_password"
+                          placeholder="">
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="text" class="form-control rounded border border-1" id="phone"
+                          placeholder="000 000 000">
+                      </div>
+                    </div>
+                    <div class="col-md-12 d-flex justify-content-center">
+                      <button class="main_bt btn btn-sm"> Register</button>
+                    </div>
+
+                  </div>
+              </div>
+          </form>
+        </div>
+      </div>
+      </form>
+    </div>
+  </div>
+  </div>
+
+  <!-- --------------------------------------------------------- -->
+
+  <div class="modal" id="myModal3">
+    <div class="modal-content" style="position: absolute;
+    top: 338px !important;
+    height: 76vh;
+    overflow-y: auto;">
+      <!-- Your existing container content goes here -->
+      <div class="container">
+        <form class="main-form">
+          <div class="row">
+            <div class="col-md-12">
+              <form class="text-center">
+                <div class="row" id="booking-form">
+                  <div class="col-md-12">
+                    <h2 class="form-heading">Booking Form</h2>
+
+                  </div>
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <label for="booking">Booking & Date</label>
+                      <input type="datetime" class="form-control rounded border border-1" id="booking"
+                        placeholder="Select Date">
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <label for="ticket">Number Of Tickets</label>
+                      <input type="number" class="form-control rounded border border-1" id="ticket" placeholder="">
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <label for="name">Additional Comments</label>
+                      <br>
+                      <Textarea class="w-100 rounded border border-1 p-1" style="height: 100px;"
+                        placeholder="Enter Your text here....."></Textarea>
+                    </div>
+                  </div>
+                  <div class="col-md-12 d-flex justify-content-center">
+                    <button class="main_bt btn btn-sm"> Book Now</button>
+                  </div>
+
+                </div>
+            </div>
+        </form>
+      </div>
+    </div>
+    </form>
+  </div>
+  </div>
+  <!-- =---------------------------------------------- -->
+  <div id="readMoreBtn2">
+    <div class="modal" id="myModal2">
+      <div class="modal-content" style="position: absolute;
+    top: 338px !important;
+">
+        <!-- Your existing container content goes here -->
+        <div class="container">
+          <form class="main-form">
+            <div class="row">
+              <div class="col-md-12">
+                <form class="text-center">
+
+                  <div class="row hide" id="login-form">
+                    <div class="col-md-12">
+                      <h2 class="form-heading">Login Form</h2>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control rounded border border-1" id="login_email"
+                          placeholder="Enter Email">
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control rounded border border-1" id="login_password"
+                          placeholder="">
+                      </div>
+                    </div>
+                    <div class="col-md-12 d-flex justify-content-center">
+                      <button class="main_bt btn btn-sm"> Login</button>
+                    </div>
+
+                  </div>
+              </div>
+          </form>
+        </div>
+      </div>
+      </form>
+    </div>
+  </div>
+  </div>
+  <!-- about -->
+  <div id="about" class="about reveal" style="margin-top: 80px">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="titlepage reveal">
+            <h2>About our travel agency</h2>
+            <span>
+              fact that a reader will be distracted by the readable content of
+              a page when looking at its layout. The point of using Lorem
+              Ipsum is that it has a more-or-less normal distribution of
+              letters,</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+            <div class="about-box reveal">
+              <p>
+                <span>There are many variations of passages of Lorem Ipsum
+                  available, but the majority have suffered alteration in some
+                  form, by injected humour, or randomized words which don't
+                  look even slightly believable. If you are going to use a
+                  passage of Lorem Ipsum, you need to be sure thereThere are
+                  many variations of passages of Lorem Ipsum available, but
+                  the majority have suffered alteration in some form, by
+                  injected humour, or randomized words which don't look even
+                  slightly believable. If you are going to use a passage of
+                  Lorem Ipsum, you need to be sure there</span>
+              </p>
+              <div class="palne-img-area">
+                <img src="images/plane-img.png" alt="images" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#">Read More</a>
+    </div>
+  </div>
+
+  <!-- traveling -->
+  <div id="travel" class="traveling reveal">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="titlepage">
+            <h2>Select Offers For Traveling</h2>
+            <span>It is a long established fact that a reader will be distracted
+              by the readable content of a page when looking at its layout.
+              The point of using Lorem Ipsum is that it has a more-or-less
+              normal distribution of letters,</span>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+          <div class="traveling-box">
+            <i><img src="images/icon/travel-icon.png" alt="icon" /></i>
+            <h3>Different Countries</h3>
+            <p>going to use a passage of Lorem Ipsum, you need to be</p>
+            <div class="read-more">
+              <a href="#">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+          <div class="traveling-box">
+            <i><img src="images/icon/travel-icon2.png" alt="icon" /></i>
+            <h3>Mountains Tours</h3>
+            <p>going to use a passage of Lorem Ipsum, you need to be</p>
+            <div class="read-more">
+              <a href="#">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+          <div class="traveling-box">
+            <i><img src="images/icon/travel-icon3.png" alt="icon" /></i>
+            <h3>Bus Tours</h3>
+            <p>going to use a passage of Lorem Ipsum, you need to be</p>
+            <div class="read-more">
+              <a href="#">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+          <div class="traveling-box">
+            <i><img src="images/icon/travel-icon4.png" alt="icon" /></i>
+            <h3>Summer Rest</h3>
+            <p>going to use a passage of Lorem Ipsum, you need to be</p>
+            <div class="read-more">
+              <a href="#">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--London -->
+  <div class="London reveal">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="titlepage">
+            <h2>Weekend in Tbilisi, Georgia</h2>
+            <span>It is a long established fact that a reader will be distracted
+              by the readable content of a page when looking at its layout.
+              The point of using Lorem Ipsum is that it has a more-or-less
+              normal distribution of letters,</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Tours -->
+  <div class="Tours reveal">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="titlepage">
+            <h2>The Best Tours</h2>
+            <span>It is a long established fact that a reader will be distracted
+              by the readable content of a page when looking at its layout.
+              The point of using Lorem Ipsum is that it has a more-or-less
+              normal distribution of letters,</span>
+          </div>
+        </div>
+      </div>
+      <section id="demos reveal">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="owl-carousel owl-theme">
+              <div class="item">
+                <img class="img-responsive" src="images/1.jpg" alt="#" />
+                <h3>Holiday Tour</h3>
+                <p>
+                  There are many variations of passages of Lorem Ipsum
+                  available, but the majority have suffered alteration in soe
+                  suffk even slightly believable. If y be sure there
+                </p>
+              </div>
+              <div class="item">
+                <img class="img-responsive" src="images/2.jpg" alt="#" />
+                <h3>Gudauri</h3>
+                <p>
+                  There are many variations of passages of Lorem Ipsum
+                  available, but the majority have suffered alteration in soe
+                  suffk even slightly believable. If y be sure there
+                </p>
+              </div>
+              <div class="item">
+                <img class="img-responsive" src="images/3.jpg" alt="#" />
+                <h3>Signagi</h3>
+                <p>
+                  There are many variations of passages of Lorem Ipsum
+                  available, but the majority have suffered alteration in soe
+                  suffk even slightly believable. If y be sure there
+                </p>
+              </div>
+              <div class="item">
+                <img class="img-responsive" src="images/2.jpg" alt="#" />
+                <h3>Holiday Tour</h3>
+                <p>
+                  There are many variations of passages of Lorem Ipsum
+                  available, but the majority have suffered alteration in soe
+                  suffk even slightly believable. If y be sure there
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <!-- Amazing -->
+  <div class="amazing reveal">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="amazing-box">
+            <h2>Amazing Georgia Tour</h2>
+            <span>There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form, by
+              injected humour, or randomised words which don't look even
+              slightly believable. If you are going to use a passage of Lorem
+              Ipsum, you need to be sure there</span>
+            <a href="javascript:void(0);" class="readMoreBtn3">Book Now</a><a href="#">Get More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- our blog -->
+  <div id="blog" class="blog reveal">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="titlepage">
+            <h2>Our Blog</h2>
+            <span>Lorem Ipsum is that it has a more-or-less normal distribution
+              of letters,</span>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+          <div class="blog-box">
+            <figure>
+              <img src="images/blog-image0.jpg" alt="#" />
+              <span>4 Feb 2019</span>
+            </figure>
+            <div class="travel">
+              <span>Post By : Travel Agency</span>
+              <p><strong class="Comment"> 06 </strong> Comment</p>
+              <p><strong class="like">05 </strong>Like</p>
+            </div>
+            <h3>Georgia Amazing Tour</h3>
+            <p>
+              It is a long established fact that a reader will be distracted
+              by the readable content of a page when looking at its layout.
+              The point of using Lorem Ipsum is that it has a more-or-less
+              normal distribution of letters, as opposed to using 'Content
+              here, content here', making it look like readable English. Many
+              desktop publishing packages and web
+            </p>
+          </div>
+        </div>
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+          <div class="blog-box">
+            <figure>
+              <img src="images/blog-image.jpg" alt="#" />
+              <span>10 Feb 2019</span>
+            </figure>
+            <div class="travel">
+              <span>Post By : Travel Agency</span>
+              <p><strong class="Comment"> 06 </strong> Comment</p>
+              <p><strong class="like">05 </strong>Like</p>
+            </div>
+            <h3>Georgia Amazing Tour</h3>
+            <p>
+              It is a long established fact that a reader will be distracted
+              by the readable content of a page when looking at its layout.
+              The point of using Lorem Ipsum is that it has a more-or-less
+              normal distribution of letters, as opposed to using 'Content
+              here, content here', making it look like readable English. Many
+              desktop publishing packages and web
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <footer>
+    <div id="contact" class="footer">
+      <div class="container">
+        <div class="row pdn-top-30">
+          <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+            <ul class="location_icon">
+              <li>
+                <a href="#"><img src="images/icon/facebook.png" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="images/icon/Twitter.png" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="images/icon/linkedin.png" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="images/icon/instagram.png" /></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+            <div class="Follow">
+              <h3>CONTACT US</h3>
+              <span>123 Second Street Fifth <br />Avenue,<br />
+                Tbilisi, Georgia<br />
+                +995 555 11 11 11</span>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+            <div class="Follow">
+              <h3>ADDITIONAL LINKS</h3>
+              <ul class="link">
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Terms and conditions</a></li>
+                <li><a href="#"> Privacy policy</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#"> Contact us</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+            <div class="Follow">
+              <h3>Contact</h3>
+              <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                  <input class="Newsletter" placeholder="Name" type="text" />
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                  <input class="Newsletter" placeholder="Email" type="text" />
+                </div>
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                  <textarea class="textarea" placeholder="comment" type="text">
+Comment</textarea>
+                </div>
+              </div>
+              <button class="Subscribe">Submit</button>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <div class="container">
+            <p>
+              Copyright 2019 All Right Reserved By
+              <a href="https://html.design/">Free html Templates</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Javascript files-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/scriptj.js"></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+  
+
+</body>
+
+</html>
